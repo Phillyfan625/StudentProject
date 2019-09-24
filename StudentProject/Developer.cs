@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,10 +17,10 @@ namespace StudentProject
 
         public Developer()
         {
-            firstName = "Peter";
-            lastName = "Johnson";
-            phoneExtension = 856;
-            gender = "Male";
+            firstName = "default";
+            lastName = "default";
+            phoneExtension = 000;
+            gender = "unknown";
             fullName = firstName + lastName;
         }
         public Developer(string fN, string lN, int phoneExt, string gen, string fullN)
@@ -31,6 +32,14 @@ namespace StudentProject
             fullN = fullName;
         }
 
+        public override string ToString()
+        {
+            return string.Format("Full Name: " + fullName + "\n Phone Extension: " + phoneExtension + "\n Gender: " + gender);
+        }
+
     }
+
+
+       
 
 }
