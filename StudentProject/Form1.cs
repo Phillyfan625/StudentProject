@@ -41,5 +41,20 @@ namespace StudentProject
         {
             //gender textbox
         }
+
+        private void DisplayAllBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayWomenBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayMenBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
