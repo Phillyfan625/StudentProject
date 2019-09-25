@@ -15,6 +15,11 @@ namespace StudentProject
         public Form1()
         {
             InitializeComponent();
+            Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
+            //fullname textbox
+            fNText.Text = d1.firstName.ToString();
+            phoneText.Text = d1.phoneExtension.ToString();
+            genderText.Text = d1.gender.ToString();
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -29,7 +34,9 @@ namespace StudentProject
 
         private void FNText_TextChanged(object sender, EventArgs e)
         {
+           
             //fullname textbox
+                 
         }
 
         private void PhoneText_TextChanged(object sender, EventArgs e)

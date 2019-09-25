@@ -37,11 +37,13 @@
             this.displayAllBtn = new System.Windows.Forms.Button();
             this.displayWomenBtn = new System.Windows.Forms.Button();
             this.displayMenBtn = new System.Windows.Forms.Button();
+            this.nextBtn = new System.Windows.Forms.Button();
+            this.prevBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fNText
             // 
-            this.fNText.Location = new System.Drawing.Point(61, 90);
+            this.fNText.Location = new System.Drawing.Point(78, 89);
             this.fNText.Name = "fNText";
             this.fNText.Size = new System.Drawing.Size(100, 20);
             this.fNText.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             // phoneText
             // 
-            this.phoneText.Location = new System.Drawing.Point(246, 90);
+            this.phoneText.Location = new System.Drawing.Point(246, 89);
             this.phoneText.Name = "phoneText";
             this.phoneText.Size = new System.Drawing.Size(100, 20);
             this.phoneText.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // genderText
             // 
-            this.genderText.Location = new System.Drawing.Point(426, 90);
+            this.genderText.Location = new System.Drawing.Point(419, 89);
             this.genderText.Name = "genderText";
             this.genderText.Size = new System.Drawing.Size(100, 20);
             this.genderText.TabIndex = 2;
@@ -66,7 +68,7 @@
             // fNLabel
             // 
             this.fNLabel.AutoSize = true;
-            this.fNLabel.Location = new System.Drawing.Point(78, 48);
+            this.fNLabel.Location = new System.Drawing.Point(95, 47);
             this.fNLabel.Name = "fNLabel";
             this.fNLabel.Size = new System.Drawing.Size(54, 13);
             this.fNLabel.TabIndex = 3;
@@ -76,7 +78,7 @@
             // phoneExtLabel
             // 
             this.phoneExtLabel.AutoSize = true;
-            this.phoneExtLabel.Location = new System.Drawing.Point(243, 48);
+            this.phoneExtLabel.Location = new System.Drawing.Point(244, 47);
             this.phoneExtLabel.Name = "phoneExtLabel";
             this.phoneExtLabel.Size = new System.Drawing.Size(87, 13);
             this.phoneExtLabel.TabIndex = 4;
@@ -85,7 +87,7 @@
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
-            this.genderLabel.Location = new System.Drawing.Point(452, 48);
+            this.genderLabel.Location = new System.Drawing.Point(446, 47);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(42, 13);
             this.genderLabel.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             // displayAllBtn
             // 
-            this.displayAllBtn.Location = new System.Drawing.Point(230, 204);
+            this.displayAllBtn.Location = new System.Drawing.Point(230, 225);
             this.displayAllBtn.Name = "displayAllBtn";
             this.displayAllBtn.Size = new System.Drawing.Size(116, 23);
             this.displayAllBtn.TabIndex = 6;
@@ -103,7 +105,7 @@
             // 
             // displayWomenBtn
             // 
-            this.displayWomenBtn.Location = new System.Drawing.Point(230, 254);
+            this.displayWomenBtn.Location = new System.Drawing.Point(230, 263);
             this.displayWomenBtn.Name = "displayWomenBtn";
             this.displayWomenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayWomenBtn.TabIndex = 7;
@@ -113,7 +115,7 @@
             // 
             // displayMenBtn
             // 
-            this.displayMenBtn.Location = new System.Drawing.Point(230, 302);
+            this.displayMenBtn.Location = new System.Drawing.Point(230, 303);
             this.displayMenBtn.Name = "displayMenBtn";
             this.displayMenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayMenBtn.TabIndex = 8;
@@ -121,11 +123,31 @@
             this.displayMenBtn.UseVisualStyleBackColor = true;
             this.displayMenBtn.Click += new System.EventHandler(this.DisplayMenBtn_Click);
             // 
+            // nextBtn
+            // 
+            this.nextBtn.Location = new System.Drawing.Point(317, 157);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextBtn.TabIndex = 9;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            // 
+            // prevBtn
+            // 
+            this.prevBtn.Location = new System.Drawing.Point(181, 157);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(75, 23);
+            this.prevBtn.TabIndex = 10;
+            this.prevBtn.Text = "Previous";
+            this.prevBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 386);
+            this.Controls.Add(this.prevBtn);
+            this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.displayMenBtn);
             this.Controls.Add(this.displayWomenBtn);
             this.Controls.Add(this.displayAllBtn);
@@ -153,6 +175,8 @@
         private System.Windows.Forms.Button displayAllBtn;
         private System.Windows.Forms.Button displayWomenBtn;
         private System.Windows.Forms.Button displayMenBtn;
+        private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button prevBtn;
     }
 }
 

@@ -9,11 +9,11 @@ namespace StudentProject
 {
     class Developer
     {
-        public string firstName;
-        public string lastName;
-        public int phoneExtension;
-        public string gender;
-        public string fullName;
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public int phoneExtension { get; set; }
+        public string gender { get; set; }
+        public string fullName { get; set; }
 
         public Developer()
         {
@@ -21,7 +21,7 @@ namespace StudentProject
             lastName = "default";
             phoneExtension = 000;
             gender = "unknown";
-            fullName = firstName + lastName;
+           
         }
         public Developer(string fN, string lN, int phoneExt, string gen, string fullN)
         {
@@ -34,7 +34,7 @@ namespace StudentProject
 
         public override string ToString()
         {
-            return string.Format("Full Name: " + fullName + "\n Phone Extension: " + phoneExtension + "\n Gender: " + gender);
+            return "Full Name: " + firstName + " " + lastName + "\nPhone Extension: " + phoneExtension + "\nGender: " + gender;
         }
 
     }
