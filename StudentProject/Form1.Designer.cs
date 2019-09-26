@@ -59,7 +59,7 @@
             // 
             // genderText
             // 
-            this.genderText.Location = new System.Drawing.Point(419, 89);
+            this.genderText.Location = new System.Drawing.Point(410, 89);
             this.genderText.Name = "genderText";
             this.genderText.Size = new System.Drawing.Size(100, 20);
             this.genderText.TabIndex = 2;
@@ -78,7 +78,7 @@
             // phoneExtLabel
             // 
             this.phoneExtLabel.AutoSize = true;
-            this.phoneExtLabel.Location = new System.Drawing.Point(244, 47);
+            this.phoneExtLabel.Location = new System.Drawing.Point(243, 47);
             this.phoneExtLabel.Name = "phoneExtLabel";
             this.phoneExtLabel.Size = new System.Drawing.Size(87, 13);
             this.phoneExtLabel.TabIndex = 4;
@@ -87,7 +87,7 @@
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
-            this.genderLabel.Location = new System.Drawing.Point(446, 47);
+            this.genderLabel.Location = new System.Drawing.Point(439, 47);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(42, 13);
             this.genderLabel.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // displayAllBtn
             // 
-            this.displayAllBtn.Location = new System.Drawing.Point(230, 225);
+            this.displayAllBtn.Location = new System.Drawing.Point(230, 226);
             this.displayAllBtn.Name = "displayAllBtn";
             this.displayAllBtn.Size = new System.Drawing.Size(116, 23);
             this.displayAllBtn.TabIndex = 6;
@@ -105,7 +105,7 @@
             // 
             // displayWomenBtn
             // 
-            this.displayWomenBtn.Location = new System.Drawing.Point(230, 263);
+            this.displayWomenBtn.Location = new System.Drawing.Point(230, 275);
             this.displayWomenBtn.Name = "displayWomenBtn";
             this.displayWomenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayWomenBtn.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             // displayMenBtn
             // 
-            this.displayMenBtn.Location = new System.Drawing.Point(230, 303);
+            this.displayMenBtn.Location = new System.Drawing.Point(230, 321);
             this.displayMenBtn.Name = "displayMenBtn";
             this.displayMenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayMenBtn.TabIndex = 8;
@@ -131,6 +131,7 @@
             this.nextBtn.TabIndex = 9;
             this.nextBtn.Text = "Next";
             this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // prevBtn
             // 

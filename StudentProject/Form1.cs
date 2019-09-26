@@ -12,14 +12,27 @@ namespace StudentProject
 {
     public partial class Form1 : Form
     {
+        private List<Developer> dev = new List<Developer>();
+        
+        Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
+        Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "male" };
+
+       
         public Form1()
         {
             InitializeComponent();
-            Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
+
             //fullname textbox
+           
             fNText.Text = d1.firstName.ToString();
             phoneText.Text = d1.phoneExtension.ToString();
             genderText.Text = d1.gender.ToString();
+        }
+
+        private void arrayInfo()
+        {
+            dev.Add(d1);
+            dev.Add(d2);
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -60,6 +73,11 @@ namespace StudentProject
         }
 
         private void DisplayMenBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextBtn_Click(object sender, EventArgs e)
         {
 
         }
