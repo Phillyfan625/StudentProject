@@ -16,16 +16,19 @@ namespace StudentProject
             
             static void Main()
             {
-                Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
-                //d1.firstName = "Peter";
-                //d1.lastName = "Johnson";
-                //d1.phoneExtension = 000;
-                //d1.gender = "male";
-                Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "male" };
+            //Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
+            ////d1.firstName = "Peter";
+            ////d1.lastName = "Johnson";
+            ////d1.phoneExtension = 000;
+            ////d1.gender = "male";
+            //Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "male" };
 
-                Console.WriteLine(d1.ToString());
-                Console.WriteLine("");
-                Console.WriteLine(d2.ToString());
+            //Console.WriteLine(d1.ToString());
+            //Console.WriteLine("");
+            //Console.WriteLine(d2.ToString());
+            var dev = new Developer();
+            //dev.dev.Add("Test");
+
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);

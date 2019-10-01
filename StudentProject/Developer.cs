@@ -37,6 +37,24 @@ namespace StudentProject
         {
             return "Full Name: " + firstName + " " + lastName + "\nPhone Extension: " + phoneExtension + "\nGender: " + gender;
         }
+        
+
+        //Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "Male" };
+        //Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "Male" };
+
+
+        //int count = 0;
+
+        //public ArrayList dev
+        //{
+        //    get { return dev; }
+        //}
+        //public void arrayInfo()
+        //{
+        //    dev.Add(d1);
+        //    dev.Add(d2);
+
+        //}
 
     }
 

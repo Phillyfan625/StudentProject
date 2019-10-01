@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,18 @@ namespace StudentProject
 {
     public partial class Form1 : Form
     {
-        private List<Developer> dev = new List<Developer>();
-        
-        Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "male" };
-        Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "male" };
+
+        //private ArrayList dev = new ArrayList();
+        //int count = 0;
+
+        Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "Male" };
+        Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "Male" };
+        Developer d3 = new Developer { firstName = "Boy", lastName = "Yollow", phoneExtension = 3, gender = "Female" };
 
        
+        
+
+
         public Form1()
         {
             InitializeComponent();
@@ -28,12 +35,39 @@ namespace StudentProject
             phoneText.Text = d1.phoneExtension.ToString();
             genderText.Text = d1.gender.ToString();
         }
-
-        private void arrayInfo()
+        private void NextBtn_Click(object sender, EventArgs e)
         {
-            dev.Add(d1);
-            dev.Add(d2);
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+
+            foreach (Developer child in developers)
+            {
+                //listBox1.Items.Add(child.firstName);
+                string fn;
+                fn = fNText.Text;
+                fNText.Text = child.firstName;
+
+                string pn;
+                pn = phoneText.Text;
+                phoneText.Text = child.phoneExtension.ToString();
+
+                string gen;
+                gen = genderText.Text;
+                genderText.Text = child.gender;
+
+                
+                
+                //MessageBox.Show(d2.ToString());
+                //MessageBox.Show(d3.ToString());
+
+            }
         }
+
+        
+
+
 
         private void Label1_Click(object sender, EventArgs e)
         {
@@ -77,9 +111,6 @@ namespace StudentProject
 
         }
 
-        private void NextBtn_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
