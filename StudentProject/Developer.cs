@@ -35,7 +35,7 @@ namespace StudentProject
 
         public override string ToString()
         {
-            return "Full Name: " + firstName + " " + lastName + "\nPhone Extension: " + phoneExtension + "\nGender: " + gender;
+            return "Full Name: " + firstName + " " + lastName + " \nPhone Extension: " + phoneExtension + " \nGender: " + gender;
         }
         
 

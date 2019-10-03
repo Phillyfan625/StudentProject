@@ -31,9 +31,9 @@ namespace StudentProject
 
             //fullname textbox
            
-            fNText.Text = d1.firstName.ToString();
-            phoneText.Text = d1.phoneExtension.ToString();
-            genderText.Text = d1.gender.ToString();
+            //fNText.Text = d1.firstName.ToString();
+            //phoneText.Text = d1.phoneExtension.ToString();
+            //genderText.Text = d1.gender.ToString();
         }
         private void NextBtn_Click(object sender, EventArgs e)
         {
@@ -41,6 +41,9 @@ namespace StudentProject
             developers.Add(d1);
             developers.Add(d2);
             developers.Add(d3);
+
+            int index = 0;
+            index = developers.Count;
 
             foreach (Developer child in developers)
             {
@@ -57,7 +60,7 @@ namespace StudentProject
                 gen = genderText.Text;
                 genderText.Text = child.gender;
 
-                
+                index++;
                 
                 //MessageBox.Show(d2.ToString());
                 //MessageBox.Show(d3.ToString());
@@ -65,7 +68,46 @@ namespace StudentProject
             }
         }
 
-        
+        private void PrevBtn_Click(object sender, EventArgs e)
+        {
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+            int index = 0;
+            index = developers.Count;
+            foreach (Developer child in developers)
+            {
+                child.ToString();
+                index--;                             
+            }
+        }
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+            // The Remove button was clicked.
+            int selectedIndex = listBox1.SelectedIndex;
+
+            try
+            {
+                // Remove the item in the List.
+               developers.RemoveAt(selectedIndex);
+            }
+            catch
+            {
+                developers.Count();
+            }
+
+            listBox1.DataSource = null;
+            listBox1.DataSource = developers;
+            
+              
+
+        }
+
 
 
 
@@ -111,6 +153,6 @@ namespace StudentProject
 
         }
 
-       
+        
     }
 }

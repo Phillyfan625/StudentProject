@@ -40,6 +40,7 @@
             this.nextBtn = new System.Windows.Forms.Button();
             this.prevBtn = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.removeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fNText
@@ -96,7 +97,7 @@
             // 
             // displayAllBtn
             // 
-            this.displayAllBtn.Location = new System.Drawing.Point(78, 223);
+            this.displayAllBtn.Location = new System.Drawing.Point(426, 226);
             this.displayAllBtn.Name = "displayAllBtn";
             this.displayAllBtn.Size = new System.Drawing.Size(116, 23);
             this.displayAllBtn.TabIndex = 6;
@@ -106,7 +107,7 @@
             // 
             // displayWomenBtn
             // 
-            this.displayWomenBtn.Location = new System.Drawing.Point(78, 272);
+            this.displayWomenBtn.Location = new System.Drawing.Point(426, 275);
             this.displayWomenBtn.Name = "displayWomenBtn";
             this.displayWomenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayWomenBtn.TabIndex = 7;
@@ -116,7 +117,7 @@
             // 
             // displayMenBtn
             // 
-            this.displayMenBtn.Location = new System.Drawing.Point(78, 318);
+            this.displayMenBtn.Location = new System.Drawing.Point(426, 321);
             this.displayMenBtn.Name = "displayMenBtn";
             this.displayMenBtn.Size = new System.Drawing.Size(116, 23);
             this.displayMenBtn.TabIndex = 8;
@@ -142,20 +143,32 @@
             this.prevBtn.TabIndex = 10;
             this.prevBtn.Text = "Previous";
             this.prevBtn.UseVisualStyleBackColor = true;
+            this.prevBtn.Click += new System.EventHandler(this.PrevBtn_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(292, 207);
+            this.listBox1.Location = new System.Drawing.Point(12, 196);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(202, 134);
+            this.listBox1.Size = new System.Drawing.Size(350, 134);
             this.listBox1.TabIndex = 11;
+            // 
+            // removeBtn
+            // 
+            this.removeBtn.Location = new System.Drawing.Point(435, 186);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Size = new System.Drawing.Size(75, 23);
+            this.removeBtn.TabIndex = 12;
+            this.removeBtn.Text = "Remove";
+            this.removeBtn.UseVisualStyleBackColor = true;
+            this.removeBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 386);
+            this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.prevBtn);
             this.Controls.Add(this.nextBtn);
@@ -189,6 +202,7 @@
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.Button prevBtn;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button removeBtn;
     }
 }
 
