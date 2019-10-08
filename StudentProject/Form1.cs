@@ -140,16 +140,61 @@ namespace StudentProject
 
         private void DisplayAllBtn_Click(object sender, EventArgs e)
         {
-
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+            foreach (Developer child in developers)
+            {
+                listBox1.Items.Add(child.ToString());
+            }
+                
         }
 
         private void DisplayWomenBtn_Click(object sender, EventArgs e)
         {
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+            
+            foreach (Developer child in developers)
+            {
+                
+                if (child.gender == "Female")
+                {
+                    listBox1.Items.Add(child.ToString());
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Nothing here");
+                }
 
+            }
         }
 
-        private void DisplayMenBtn_Click(object sender, EventArgs e)
+            private void DisplayMenBtn_Click(object sender, EventArgs e)
         {
+            List<Developer> developers = new List<Developer>();
+            developers.Add(d1);
+            developers.Add(d2);
+            developers.Add(d3);
+
+            foreach (Developer child in developers)
+            {
+
+                if (child.gender == "Male")
+                {
+                    listBox1.Items.Add(child.ToString());
+
+                }
+                else
+                {
+                    Console.WriteLine("Nothing here");
+                }
+
+            }
 
         }
 
