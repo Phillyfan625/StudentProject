@@ -18,11 +18,12 @@ namespace StudentProject
         //int count = 0;
 
         Developer d1 = new Developer { firstName = "Peter", lastName = "Johnson", phoneExtension = 1, gender = "Male" };
-        Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "Male" };
+        Developer d2 = new Developer { firstName = "John", lastName = "Posho", phoneExtension = 2, gender = "Female" };
         Developer d3 = new Developer { firstName = "Boy", lastName = "Yollow", phoneExtension = 3, gender = "Female" };
 
-       
-        
+        int index = 0;
+
+
 
 
         public Form1()
@@ -31,9 +32,7 @@ namespace StudentProject
 
             //fullname textbox
            
-            //fNText.Text = d1.firstName.ToString();
-            //phoneText.Text = d1.phoneExtension.ToString();
-            //genderText.Text = d1.gender.ToString();
+          
         }
         private void NextBtn_Click(object sender, EventArgs e)
         {
@@ -42,30 +41,14 @@ namespace StudentProject
             developers.Add(d2);
             developers.Add(d3);
 
-            int index = 0;
-            index = developers.Count;
+            developers.ElementAt(index);
+            Developer d = developers.ElementAt(index);
+            fNText.Text = d.firstName;
+            phoneText.Text = d.phoneExtension.ToString();
+            genderText.Text = d.gender;
 
-            foreach (Developer child in developers)
-            {
-                //listBox1.Items.Add(child.firstName);
-                string fn;
-                fn = fNText.Text;
-                fNText.Text = child.firstName;
-
-                string pn;
-                pn = phoneText.Text;
-                phoneText.Text = child.phoneExtension.ToString();
-
-                string gen;
-                gen = genderText.Text;
-                genderText.Text = child.gender;
-
-                index++;
-                
-                //MessageBox.Show(d2.ToString());
-                //MessageBox.Show(d3.ToString());
-
-            }
+            index++;
+          
         }
 
         private void PrevBtn_Click(object sender, EventArgs e)
@@ -74,13 +57,16 @@ namespace StudentProject
             developers.Add(d1);
             developers.Add(d2);
             developers.Add(d3);
-            int index = 0;
-            index = developers.Count;
-            foreach (Developer child in developers)
-            {
-                child.ToString();
-                index--;                             
-            }
+
+            
+            developers.ElementAt(index);
+            Developer d = developers.ElementAt(index);
+            fNText.Text = d.firstName;
+            phoneText.Text = d.phoneExtension.ToString();
+            genderText.Text = d.gender;
+
+            index--;
+
         }
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
