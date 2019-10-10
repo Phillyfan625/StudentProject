@@ -26,15 +26,15 @@ namespace StudentProject
             //Console.WriteLine(d1.ToString());
             //Console.WriteLine("");
             //Console.WriteLine(d2.ToString());
-            var dev = new Developer();
+            //var dev = new Developer();
             //dev.dev.Add("Test");
 
 
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
 
-            }
+        }
 
 
         

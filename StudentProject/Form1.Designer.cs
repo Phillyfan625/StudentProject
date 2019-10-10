@@ -41,13 +41,15 @@
             this.prevBtn = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.removeBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // fNText
             // 
-            this.fNText.Location = new System.Drawing.Point(78, 89);
+            this.fNText.Location = new System.Drawing.Point(38, 89);
             this.fNText.Name = "fNText";
-            this.fNText.Size = new System.Drawing.Size(100, 20);
+            this.fNText.Size = new System.Drawing.Size(70, 20);
             this.fNText.TabIndex = 0;
             this.fNText.TextChanged += new System.EventHandler(this.FNText_TextChanged);
             // 
@@ -70,11 +72,11 @@
             // fNLabel
             // 
             this.fNLabel.AutoSize = true;
-            this.fNLabel.Location = new System.Drawing.Point(95, 47);
+            this.fNLabel.Location = new System.Drawing.Point(35, 47);
             this.fNLabel.Name = "fNLabel";
-            this.fNLabel.Size = new System.Drawing.Size(54, 13);
+            this.fNLabel.Size = new System.Drawing.Size(57, 13);
             this.fNLabel.TabIndex = 3;
-            this.fNLabel.Text = "Full Name";
+            this.fNLabel.Text = "First Name";
             this.fNLabel.Click += new System.EventHandler(this.FNLabel_Click);
             // 
             // phoneExtLabel
@@ -163,11 +165,29 @@
             this.removeBtn.UseVisualStyleBackColor = true;
             this.removeBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(146, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Last Name";
+            // 
+            // lName
+            // 
+            this.lName.Location = new System.Drawing.Point(131, 89);
+            this.lName.Name = "lName";
+            this.lName.Size = new System.Drawing.Size(100, 20);
+            this.lName.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 386);
+            this.Controls.Add(this.lName);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.prevBtn);
@@ -203,6 +223,8 @@
         private System.Windows.Forms.Button prevBtn;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button removeBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox lName;
     }
 }
 
