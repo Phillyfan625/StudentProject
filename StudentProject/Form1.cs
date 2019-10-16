@@ -32,11 +32,14 @@ namespace StudentProject
         public Form1()
         {
             InitializeComponent();
+            getDataSet();
+
 
             //fullname textbox        
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void getDataSet()
         {
+
             try
             {
                 objConnect = new DatabaseConnection();
@@ -45,7 +48,7 @@ namespace StudentProject
 
                 objConnect.connection_string = conString;
 
-                objConnect.Sql = Properties.Settings.Default.SQL;
+                objConnect.Sql = "dbo.selALL";
 
                 ds = objConnect.GetConnection;
                 MaxRows = ds.Tables[0].Rows.Count;

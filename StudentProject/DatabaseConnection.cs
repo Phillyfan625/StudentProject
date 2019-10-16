@@ -38,7 +38,8 @@ namespace StudentProject
             System.Data.SqlClient.SqlDataAdapter da_1 = new System.Data.SqlClient.SqlDataAdapter(sql_string, con);
 
             System.Data.DataSet dat_set = new System.Data.DataSet();
-            da_1.Fill(dat_set, "Table");
+            
+            da_1.Fill(dat_set);
             con.Close();
 
             return dat_set;
